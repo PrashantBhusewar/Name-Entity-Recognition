@@ -1,12 +1,10 @@
 import sys
-
 from ner.components.data_ingestion import DataIngestion
 from ner.components.data_transforamation import DataTransformation
 from ner.components.model_trainer import ModelTraining
 from ner.components.model_evaluation import ModelEvaluation
 from ner.components.model_pusher import ModelPusher
 from ner.configuration.gcloud import GCloud
-
 
 from ner.entity.artifact_entity import (DataIngestionArtifacts,
                                         DataTransformationArtifacts,
@@ -20,7 +18,6 @@ from ner.entity.config_entity import (DataIngestionConfig,
                                       ModelTrainingConfig,
                                       ModelEvalConfig,
                                       ModelPusherConfig)
-
 
 from ner.exception import NerException
 from ner.logger import logging
